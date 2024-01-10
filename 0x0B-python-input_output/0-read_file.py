@@ -2,7 +2,7 @@
 
 def read_file(filename=""):
     '''fxn reads a file objevt and print to stdout
-    Args: 
+    Args:
         filename (ob): the file obj parameter
     '''
 
