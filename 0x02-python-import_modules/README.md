@@ -4,3 +4,4 @@ Thesenare the different tasks solved:
 
 0-add.py - fxn import a module to add two numbers
 1-calculation.py - fxn print CLI argument with index
+3-infinite_add.py - script add infinit number
