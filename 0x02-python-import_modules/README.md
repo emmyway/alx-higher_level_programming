@@ -8,3 +8,4 @@ Thesenare the different tasks solved:
 5-variable_load.py - script import a variable and print it
 100-my_calculator.py - fxn imports calculator modules and perform calculations
 101-easy_print.py - script print characters to stdout using os module
+103-fast_alphabet.py - this script of 3 lines print uppercase alphabets
