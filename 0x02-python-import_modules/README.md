@@ -6,3 +6,4 @@ Thesenare the different tasks solved:
 1-calculation.py - fxn print CLI argument with index
 3-infinite_add.py - script add infinit number
 5-variable_load.py - script import a variable and print it
+100-my_calculator.py - fxn imports calculator modules and perform calculations
