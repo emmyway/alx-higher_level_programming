@@ -7,3 +7,4 @@ task2 - initializes the instances of rectangle
 task3 - modified rectangle class to validate setter value
 task4 - modified rectangle class to return area
 task4 - Rectangle class is modified display a rectangle using #
+task6 - used the __str__ in Rectangle class
