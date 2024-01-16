@@ -6,3 +6,4 @@ models/rectangle.py - rectangle class that inherit from the module in this packa
 task2 - initializes the instances of rectangle
 task3 - modified rectangle class to validate setter value
 task4 - modified rectangle class to return area
+task4 - Rectangle class is modified display a rectangle using #
