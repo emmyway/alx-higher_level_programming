@@ -1,3 +1,5 @@
 This is an alx swe student coirse projeft designed to sharpen our foundational knowledge of python:
 
 These are the different tasks undertaken:
+models/base.py - a base module defined in a package
+models/rectangle.py - rectangle class that inherit from the module in this package

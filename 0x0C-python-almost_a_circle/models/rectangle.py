@@ -16,31 +16,89 @@ class Rectangle(Base):
             id (int, optional): the identifier for objects
         '''
         super().__init__(id)
+
+
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
 
-    def get_width(self):
+    @property
+    def width(self):
+        '''getter method
+        Return:
+            width value
+        '''
         return self.__width
 
-    def set_width(self, value):
+    @width.setter
+    def width(self, value):
+        '''setter method
+        Args:
+            value: the new value
+        '''
+        if not isinstance(value, int):
+            raise TypeError(width must be an integer)
+        if value <= 0:
+            raise ValueError(width must be > 0)
         self.__width = value
 
-    def get_height(self):
+    @property
+    def height(self):
+        '''getter method
+        Return:
+            height value
+        '''
         return self.__height
 
-    def set_height(self, value):
+    @height.setter
+    def height(self, value):
+        '''setter method
+        Args:
+            value: the new value
+        '''
+        raise TypeError(height must be an integer)
+        if value <= 0:
+            raise ValueError(height must be > 0)
         self.__height = value
 
-    def get_x(self):
+    @property
+    def x(self):
+        '''getter method
+        Return:
+            x value
+        '''
         return self.__x
 
-    def set_x(self, value):
+    @x.setter
+    def x(self, value):
+        '''setter method
+        Args:
+            value: the new value
+        '''
+        raise TypeError(x must be an integer)
+        if value < 0:
+            raise ValueError(x must be >= 0)
         self.__x = value
 
-    def get_y(self):
+    @property
+    def y(self):
+        '''getter method
+        Return:
+            y value
+        '''
         return self.__y
 
-    def set_y(self, value):
+    @y.setter
+    def y(self, value):
+        '''setter method
+        Args:
+            value: the new value
+        '''
+        raise TypeError(y must be an integer)
+        if value < 0:
+            raise ValueError(y must be >= 0)
         self.__y = value
+
+    def area(self):
+        return self.__width * self.__height
