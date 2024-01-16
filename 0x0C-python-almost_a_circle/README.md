@@ -3,3 +3,6 @@ This is an alx swe student coirse projeft designed to sharpen our foundational k
 These are the different tasks undertaken:
 models/base.py - a base module defined in a package
 models/rectangle.py - rectangle class that inherit from the module in this package
+task2 - initializes the instances of rectangle
+task3 - modified rectangle class to validate setter value
+task4 - modified rectangle class to return area
