@@ -104,13 +104,49 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        '''computes area of Rectangle object
+        Return:
+            computed result
+        '''
         return self.__width * self.__height
 
     def display(self):
+        '''displays to stdout the rectangle object using "#"
+            and representing the x and y coordinats'''
         for _ in range(self.y):
             print()
         for _ in range(self.__height):
             print(' ' * self.x + '#' * self.__width)
 
     def __str__(self):
-        return ('[Rectangle] ({}) {}/{} {}/{}'.format(self.id, self.x, self.y, self.width, self.height))
+        '''prints a readable/customized object
+            format; can be reusable'''
+
+        return ('[Rectangle] ({}) {}/{} {}/{}'
+                .format(self.id,
+                        self.x,
+                        self.y,
+                        self.width,
+                        self.height))
+
+    def update(self, *args):
+        '''updates attribute of the rectangular instance
+        based on arbitrary argumenns
+        Args:
+            args: arbitrary positional arguments
+        '''
+
+        if len(args) >= 1:
+            self.id = args[0]
+
+        if len(args) >= 2:
+            self.width = args[1]
+
+        if len(args) >= 3:
+            self.height = args[2]
+
+        if len(args) >= 4:
+            self.x = args[3]
+
+        if len(args) >= 5:
+            self.y = args[4]
