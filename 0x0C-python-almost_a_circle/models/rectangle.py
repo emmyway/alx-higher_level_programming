@@ -17,7 +17,6 @@ class Rectangle(Base):
         '''
         super().__init__(id)
 
-
         self.__width = width
         self.__height = height
         self.__x = x
@@ -133,9 +132,11 @@ class Rectangle(Base):
         '''updates attribute of the rectangular instance
         based on arbitrary argumenns
         Args:
-            args: arbitrary positional arguments
+            *args: arbitrary positional arguments
+            **kwargs: key word positional argument
         '''
 
+    if (args):
         if len(args) >= 1:
             self.id = args[0]
 
@@ -150,3 +151,6 @@ class Rectangle(Base):
 
         if len(args) >= 5:
             self.y = args[4]
+    else:
+        for key value in kwargs.items():
+            setattr(self, key, value)
