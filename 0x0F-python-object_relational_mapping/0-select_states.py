@@ -27,10 +27,10 @@ if __name__ == "__main__":
     if len(sys.argv) != 4:
         sys.exit(1)
 
-username = sys.argv[1]
-password = sys.argv[2]
-database = sys.argv[3]
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
 
-list_states(username, password, database)
+    list_states(username, password, database)
 
 
