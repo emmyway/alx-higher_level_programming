@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-import MySQLdb
-from sys import argv
-import sys
 '''
 script that takes in an argument and displays all values in
 the states table of hbtn_0e_0_usa where name matches the argument.
@@ -14,6 +11,10 @@ You must use format to create the SQL query with the user input
 Results must be sorted in ascending order by states.id
 Your code should not be executed when imported
 '''
+
+import MySQLdb
+from sys import argv
+import sys
 
 
 def match_list(username, password, database, state_name):

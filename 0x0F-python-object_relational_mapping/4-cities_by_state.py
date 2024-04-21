@@ -11,6 +11,7 @@ You can use only execute() once
 Results must be displayed as they are in the example below
 Your code should not be executed when imported
 '''
+
 import MySQLdb
 import sys
 
