@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 '''
 a script that lists all State objects from the
 database hbtn_0e_6_usa
@@ -25,11 +25,10 @@ if __name__ == "__main__":
     retrieves states from database
     """
 
-    db_url = "mysql+mysqldb://{}:{}@localhost/{}' \
-    .format(sys.argv[1], sys.argv[2], \
-            sys.argv[3]), pool_pre_ping=True"
+    db_url = 'mysql+mysqldb://{}:{}@localhost/{}' \
+             .format(sys.argv[1], sys.argv[2], sys.argv[3])
 
-    engine = create_engine(db_url)
+    engine = create_engine(db_url, pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
 
     session = Session()
