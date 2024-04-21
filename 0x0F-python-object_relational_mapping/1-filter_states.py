@@ -15,6 +15,13 @@ Your code should not be executed when imported
 
 
 def filter_states(username, password, database):
+    '''
+    script list all states from db with name starting from N
+    Args:
+        username: the mysql server username
+        password: the password to mysql server
+        database: the database name
+    '''
     # connect to db server
     db = MySQLdb.connect(host="localhost", port=3306, user=username,
                          passwd=password, db=database)

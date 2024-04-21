@@ -19,6 +19,10 @@ Your code should not be executed when imported
 def match_list(username, password, database, state_name):
     '''
     prints state info that matches name argument
+    Args:
+        username: the mysql server username
+        password: the password to mysql server
+        database: the database name
     '''
     # est conneftion to db server
     db = MySQLdb.connect(host="localhost", port=3306,

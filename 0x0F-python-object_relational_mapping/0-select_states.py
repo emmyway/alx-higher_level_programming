@@ -17,6 +17,10 @@ Your code should not be executed when imported
 def list_states(username, password, database):
     '''
     script lists all rows in table (state)
+    Args:
+        username: the mysql server username
+        password: the password to mysql server
+        database: the database name
     '''
     # connect to mysql database
     db = MySQLdb.connect(host="localhost", port=3306, user=username,

@@ -19,6 +19,10 @@ def no_injection(username, password, database, state_name):
     '''
     functon searches prints a given state arg from a database,
     not giving room for sql injection
+    Args:
+        username: the mysql server username
+        password: the password to mysql server
+        database: the database name
     '''
     # connect to mysql database
     db = MySQLdb.connect(host="localhost", port=3306, user=username,
